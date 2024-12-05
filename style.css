@@ -240,3 +240,38 @@ footer {
     }
  
 }
+
+/* Add animations */
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px); /* Start slightly below */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Move to original position */
+    }
+}
+
+/* Add the animation to sections */
+.top, .menu, .grid, .footer-logo {
+    opacity: 0; /* Start hidden */
+    animation: fadeInSlideUp 0.8s ease-out forwards;
+
+}
+
+.top {
+    animation-delay: 1s;
+}
+
+.menu {
+    animation-delay: 2s;
+}
+
+.grid {
+    animation-delay: 4s;
+}
+
+.footer-logo {
+    animation-delay: 4s;
+}
