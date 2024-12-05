@@ -312,6 +312,85 @@ footer {
       font-family: 'Arial';
       cursor: pointer;
     }
+    @keyframes pulseWave {
+        0% {
+            transform: scale(1); /* Tamaño inicial */
+            opacity: 1;         /* Completamente visible */
+        }
+        50% {
+            transform: scale(1.025); /* Expansión suave */
+            opacity: 0.50; 
+                 /* Ligera transparencia */
+        }
+        100% {
+            transform: scale(1); /* Regreso al tamaño inicial */
+            opacity: 1;         /* Completamente visible */
+        }
+    }
+    
+    /* Aplicar la animación a las imágenes */
+    .grid .two-cards img, .grid .one-card img {
+        animation: pulseWave 4s infinite ease-in-out;
+    }
+    
+    
+    
+    /*TEST */
+    @keyframes pulseWave {
+        0% {
+            transform: scale(1);
+            opacity: 1;
+        }
+        50% {
+            transform: scale(1.025);
+            opacity: 0.50;
+        }
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+    
+    @keyframes showText {
+        0%, 100% {
+            opacity: 0; /* Texto oculto al inicio y final */
+        }
+        50% {
+            opacity: 1; /* Texto visible en la expansión */
+        }
+    }
+    
+    /* Contenedor para posicionar el texto */
+    .grid .two-cards, .grid .one-card {
+        position: relative; /* Necesario para posicionar el texto encima de las imágenes */
+    }
+    
+    .grid .two-cards img, .grid .one-card img {
+        animation: pulseWave 4s infinite ease-in-out;
+        display: block;
+        position: relative;
+        z-index: 1; /* Asegura que la imagen esté debajo del texto */
+    }
+    
+    /* Texto "Da click" */
+    .grid .two-cards::after, .grid .one-card::after {
+        content: "Da click aquí para ordenar"; /* Texto que aparece */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 24px;
+        font-weight: bold;
+        color: #00542A ;
+        font-family: Arial, Helvetica, sans-serif;
+        opacity: 0; /* Oculto inicialmente */
+        animation: showText 2s infinite ease-in-out; /* Sincronizado con el efecto */
+        z-index: 2; /* Sobre la imagen */
+        pointer-events: none; /* No bloquea clics en la imagen */
+        text-align: center;
+    }
+    
+    
     
     
  
