@@ -261,17 +261,17 @@ footer {
 }
 
 .top {
-    animation-delay: 1s;
+    animation-delay: 0.5s;
 }
 
 .menu {
-    animation-delay: 2s;
+    animation-delay: 1s;
 }
 
 .grid {
-    animation-delay: 4s;
+    animation-delay: 1.5s;
 }
 
 .footer-logo {
-    animation-delay: 4s;
+    animation-delay: 2s;
 }
