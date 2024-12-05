@@ -1,0 +1,242 @@
+* {
+    padding: 0;
+    margin:0;
+    background-color: #F9F3D6; /* Body background color */; /* Body background color */
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.top img {
+    width: 10%;
+}
+
+.logo {
+    width: 30% !important;
+}
+
+.menu {
+    margin-top: 150px !important;
+    margin: 0 auto;
+
+    max-width: 70%;
+}
+
+.menu img {
+    max-width: 100%;
+}
+
+footer {
+
+    background-color: #9CC5E0 !important; /* Blue background */
+    width: 100%;
+    border:2px solid red;
+}
+/* Fix for footer-logo */
+.footer-logo {
+    margin-top:200px;
+   
+    background-color: #9CC5E0 !important; /* Blue background */
+    height: 300px;
+    width: 100% !important;
+    display: flex; /* Ensures child img stays contained */
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically */
+    z-index: 0; /* Ensures it's behind other elements if needed */
+    background-color: #9CC5E0 !important;
+   
+
+}
+
+.footer-logo img {
+  
+  
+    max-width: 25%; /* Adjust image size */
+    height: auto; /* Maintain aspect ratio */
+    background-color: #9CC5E0 !important;
+
+}
+
+.grid {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top:100px;
+}
+.top-two-cards {
+    display: flex;
+    flex-direction: row;
+
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.two-cards {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   
+    justify-items: center;
+    align-items: center ;
+}
+
+.two-cards img {
+    width: 50%;
+    height: 500px;
+
+    
+}
+
+.one-card {
+    margin-top:100px;
+   
+    width: 100%;
+  
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   
+    justify-items: center;
+    align-items: center ;
+}
+
+.one-card img {
+    width: 25%;
+    height: 500px;
+}
+
+
+/*MEDIA QUERY STARTS */
+
+@media screen and (max-width: 480px) {
+    .container {
+        margin: 0 auto;
+        width: 95%;
+    }
+    
+    .top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+    }
+    
+    .top img {
+        width: 10%;
+    }
+    
+    .logo {
+        width: 60% !important;
+    }
+    
+    .menu {
+        margin-top: 100px !important;
+        margin: 0 auto;
+    
+        max-width: 95%;
+    }
+    
+    .menu img {
+        max-width: 100%;
+    }
+    
+    footer {
+    
+        background-color: #9CC5E0 !important; /* Blue background */
+        width: 100%;
+        border:2px solid red;
+    }
+    /* Fix for footer-logo */
+    .footer-logo {
+        margin-top:200px;
+       
+        background-color: #9CC5E0 !important; /* Blue background */
+        height: 300px;
+        width: 100% !important;
+        display: flex; /* Ensures child img stays contained */
+        justify-content: center; /* Centers the image horizontally */
+        align-items: center; /* Centers the image vertically */
+        z-index: 0; /* Ensures it's behind other elements if needed */
+        background-color: #9CC5E0 !important;
+       
+    
+    }
+    
+    .footer-logo img {
+      
+      
+        max-width: 50%; /* Adjust image size */
+        height: auto; /* Maintain aspect ratio */
+        background-color: #9CC5E0 !important;
+    
+    }
+    
+    .grid {
+    
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top:100px;
+    }
+    .top-two-cards {
+        display: flex;
+        flex-direction: column;
+    
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .two-cards {
+    
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+       
+        justify-items: center;
+        align-items: center ;
+        margin-top:50px;
+    }
+    
+    .two-cards img {
+        width: 80%;
+        height: 500px;
+    
+        
+    }
+    
+    .one-card {
+        margin-top:50px;
+       
+        width: 100%;
+      
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+       
+        justify-items: center;
+        align-items: center ;
+    }
+    
+    .one-card img {
+        width: 80%;
+        height: 500px;
+    }
+ 
+}
