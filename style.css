@@ -73,6 +73,7 @@ footer {
     display: flex;
     flex-direction: column;
     margin-top:100px;
+   
 }
 .top-two-cards {
     display: flex;
@@ -82,6 +83,7 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100%;
+
 }
 
 .two-cards {
@@ -92,15 +94,19 @@ footer {
    
     justify-items: center;
     align-items: center ;
+   
 }
 
 .two-cards img {
     width: 50%;
     height: 500px;
     border:5px solid #9FCCFF !important;
+    cursor: pointer;
 
     
 }
+
+
 
 .one-card {
     margin-top:100px;
@@ -119,6 +125,38 @@ footer {
     width: 25%;
     height: 500px;
     border:5px solid #9FCCFF !important;
+    cursor: pointer;
+}
+.card-text {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    cursor: pointer;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-top:15px;
+    margin-bottom:15px;
+}
+
+.card-text img {
+    width: 30px;
+    height: 30px;
+    border:0 !important;
+    margin-right:20px;
+}
+
+.card-text p {
+  font-size: 2rem;
+  color: #00542A;
+  font-family: 'Arial';
+  font-weight: bold;
+}
+.card-des {
+    font-size: 1.5rem;
+  color: #00542A;
+  font-family: 'Arial';
+  cursor: pointer;
 }
 
 
@@ -242,6 +280,40 @@ footer {
         width: 80%;
         height: 500px;
     }
+    .card-text {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        cursor: pointer;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        margin-top:15px;
+        margin-bottom:15px;
+      
+    }
+    
+    .card-text img {
+        width: 30px;
+        height: 30px;
+        border:0 !important;
+        margin-right:20px;
+    }
+    
+    .card-text p {
+      font-size: 2rem;
+      color: #00542A;
+      font-family: 'Arial';
+      font-weight: bold;
+    }
+    .card-des {
+        font-size: 1.5rem;
+      color: #00542A;
+      font-family: 'Arial';
+      cursor: pointer;
+    }
+    
+    
  
 }
 
