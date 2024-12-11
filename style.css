@@ -100,7 +100,7 @@ footer {
 .two-cards img {
     width: 50%;
     height: 500px;
-    border:5px solid #9FCCFF !important;
+    
     cursor: pointer;
 
     
@@ -119,13 +119,19 @@ footer {
    
     justify-items: center;
     align-items: center ;
+   
 }
 
 .one-card img {
     width: 25%;
     height: 500px;
-    border:5px solid #9FCCFF !important;
+
     cursor: pointer;
+}
+
+.one-card .card-text {
+   
+    width: 25%;
 }
 .card-text {
     display: flex;
@@ -137,6 +143,9 @@ footer {
     align-items: center;
     margin-top:15px;
     margin-bottom:15px;
+    border:0px solid #00542A;
+    background-color: #00542A;
+    color:white;
 }
 
 .card-text img {
@@ -144,6 +153,8 @@ footer {
     height: 30px;
     border:0 !important;
     margin-right:20px;
+    background-color: #00542A;
+    color:white;
 }
 
 .card-text p {
@@ -151,6 +162,8 @@ footer {
   color: #00542A;
   font-family: 'Arial';
   font-weight: bold;
+  background-color: #00542A;
+    color:white;
 }
 .card-des {
     font-size: 1.5rem;
@@ -159,6 +172,81 @@ footer {
   cursor: pointer;
 }
 
+form {
+    width: 50%;
+
+    margin: 0 auto;
+    margin-top:100px;
+   text-align: left;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 1.5rem;
+   color:#00542A;
+   height: 700px;
+   font-weight: bold;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   justify-items: center;
+
+}
+form input {
+    padding:10px;
+    border:1px solid #00542A;
+    margin-bottom:50px;
+    font-size: 1.25rem;
+    color:#0D2F39;
+    
+}
+form input:focus {
+    padding:10px;
+    border:2px solid #00542A;
+    margin-bottom:50px;
+    font-size: 1.25rem;
+    color:#0D2F39;
+    
+}
+
+form select {
+    padding:20px !important;
+ 
+    font-size: 1.25rem;
+    background-color: #F9F3D6 !important;
+    color: #00542A;
+    border-radius: 0px !important;
+    margin-bottom:50px;
+}
+form label {
+    margin-bottom:10px;
+}
+
+form input[type="submit"] {
+    background-color: #00542A;
+    color:white;
+    font-size: 1.25rem;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+form h3 {
+    text-align: center;
+
+}
+
+.event {
+
+    width: 90%;
+    margin:  0 auto;
+    text-align: center;
+    font-size: 2rem;
+    color: #00542A;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.event-menu {
+    margin-top: 0px !important;
+    
+    margin:0;
+}
 
 /*MEDIA QUERY STARTS */
 
@@ -177,7 +265,7 @@ footer {
     }
     
     .top img {
-        width: 10%;
+        width: 17%;
     }
     
     .logo {
@@ -257,7 +345,7 @@ footer {
     }
     
     .two-cards img {
-        width: 80%;
+        width: 90%;
         height: 500px;
       
         
@@ -277,19 +365,24 @@ footer {
     }
     
     .one-card img {
-        width: 80%;
+        width: 90%;
         height: 500px;
+    }
+    .one-card .card-text {
+       
+        width: 90%;
     }
     .card-text {
         display: flex;
         flex-direction: row;
-        width: 80%;
+        width: 90%;
         cursor: pointer;
         justify-content: center;
         justify-items: center;
         align-items: center;
         margin-top:15px;
         margin-bottom:15px;
+        
       
     }
     
@@ -298,11 +391,12 @@ footer {
         height: 30px;
         border:0 !important;
         margin-right:20px;
+ 
     }
     
     .card-text p {
       font-size: 2rem;
-      color: #00542A;
+      color: white;
       font-family: 'Arial';
       font-weight: bold;
     }
@@ -312,83 +406,24 @@ footer {
       font-family: 'Arial';
       cursor: pointer;
     }
-    @keyframes pulseWave {
-        0% {
-            transform: scale(1); /* Tamaño inicial */
-            opacity: 1;         /* Completamente visible */
-        }
-        50% {
-            transform: scale(1.025); /* Expansión suave */
-            opacity: 0.50; 
-                 /* Ligera transparencia */
-        }
-        100% {
-            transform: scale(1); /* Regreso al tamaño inicial */
-            opacity: 1;         /* Completamente visible */
-        }
+
+    form {
+    
+        width: 90%;
+    }
+
+    form input[type="submit"] {
+        background-color: #9CC5E0;
+        border: 0;
     }
     
-    /* Aplicar la animación a las imágenes */
-    .grid .two-cards img, .grid .one-card img {
-        animation: pulseWave 4s infinite ease-in-out;
+    .event-menu {
+        margin-top: 50px !important;
+   
+        margin:0 auto;
     }
     
-    
-    
-    /*TEST */
-    @keyframes pulseWave {
-        0% {
-            transform: scale(1);
-            opacity: 1;
-        }
-        50% {
-            transform: scale(1.025);
-            opacity: 0.50;
-        }
-        100% {
-            transform: scale(1);
-            opacity: 1;
-        }
-    }
-    
-    @keyframes showText {
-        0%, 100% {
-            opacity: 0; /* Texto oculto al inicio y final */
-        }
-        50% {
-            opacity: 1; /* Texto visible en la expansión */
-        }
-    }
-    
-    /* Contenedor para posicionar el texto */
-    .grid .two-cards, .grid .one-card {
-        position: relative; /* Necesario para posicionar el texto encima de las imágenes */
-    }
-    
-    .grid .two-cards img, .grid .one-card img {
-        animation: pulseWave 4s infinite ease-in-out;
-        display: block;
-        position: relative;
-        z-index: 1; /* Asegura que la imagen esté debajo del texto */
-    }
-    
-    /* Texto "Da click" */
-    .grid .two-cards::after, .grid .one-card::after {
-        content: "Da click aquí para ordenar"; /* Texto que aparece */
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 24px;
-        font-weight: bold;
-        color: #00542A ;
-        font-family: Arial, Helvetica, sans-serif;
-        opacity: 0; /* Oculto inicialmente */
-        animation: showText 2s infinite ease-in-out; /* Sincronizado con el efecto */
-        z-index: 2; /* Sobre la imagen */
-        pointer-events: none; /* No bloquea clics en la imagen */
-        text-align: center;
-    }
+
     
     
     
