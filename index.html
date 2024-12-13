@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>TLACO-YO</title>
+        <title>DEMO - TLACO-YO</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#F9F3D6">
@@ -25,7 +25,7 @@
             <div class="top-two-cards">
                 <div class="two-cards">
                     <img src="images/tlaco1.JPG">
-                    <div class="card-text">
+                    <div class="card-text" id="whatsapp-link-4">
                         <img src="images/cart-icon.png">
                         <p>4 tlacoyos</p>
                     </div>
@@ -36,7 +36,7 @@
                 </div>
                 <div class="two-cards">
                     <img src="images/tlaco2.JPG">
-                    <div class="card-text">
+                    <div class="card-text" id="whatsapp-link-6" >
                         <img src="images/cart-icon.png">
                         <p>6 tlacoyos</p>
                     </div>
@@ -48,8 +48,8 @@
             </div>
             
             <div class="one-card">
-                <img src="images/tlaco3.JPG">
-                <div class="card-text">
+                <img src="images/tlaco-test.JPG">
+                <div class="card-text" id="whatsapp-link-12">
                     <img src="images/cart-icon.png">
                     <p>12 tlacoyos</p>
                 </div>
@@ -59,32 +59,38 @@
             </div>
         </div>
 
-        <form>
+       <!-- <form action="https://submit-form.com/vM6N88o2J">
+            <input
+    type="hidden"
+    name="_redirect"
+    value="https://wa.me/525578857813"
+  />
+  <input type="hidden" name="_append" value="false" />
             <h3>Crea tu pedido</h3>
             <label for="fname">Nombre:</label>
-            <input type="text" id="fname" name="fname">
+            <input type="text" id="fname" name="nombre">
             <label for="wa">WhatsApp: </label>
             <input type="text" id="wa" name="wa">
             <label for="tlaco">¿Cuantos tlacoyos?</label>
-            <select id="tlaco" name="tlaco">
-                <option value="1">4</option>
-                <option value="2">6</option>
-                <option value="3">12</option>
+            <select id="tlaco" name="paquete">
+                <option value="4tlacoyos">4</option>
+                <option value="6tlacoyos">6</option>
+                <option value="12tlacoyos">12</option>
             
               </select>
               <label for="relleno">Elige tu relleno</label>
               <select id="relleno" name="relleno">
                 <option value="" disabled selected>Selecciona un relleno</option>
-                  <option value="1">Chicharrón</option>
-                  <option value="2">Frijol</option>
-                  <option value="3">Haba</option>
-                  <option value="4">Frijol y chicarrón</option>
-                    <option value="5">Surtido</option>
+                  <option value="chicharron" name="Chicarron">Chicharrón</option>
+                  <option value="frijol" name="Frijol">Frijol</option>
+                  <option value="haba" name="Haba">Haba</option>
+                  <option value="frijol y chicharon" name="Frijol y chicarron">Frijol y chicarrón</option>
+                  <option value="surtido" name="Surtido">Surtido</option>
                   <input type="submit" value="Enviar pedido">
               
                 </select>
             
-          </form>
+          </form> -->
 
           <p class="event">¿Tienes un evento?</p>
 
@@ -92,7 +98,7 @@
             <img src="images/eventos.PNG">
           </div>
           <div class="cta">
-            <a>Envia WhatsApp</a</div>
+            <a href="https://wa.me/525578857813" target="_blank" style="text-decoration: none;">Envia WhatsApp</a</div>
      </div>
     </div>
 
@@ -104,6 +110,19 @@
     </div>
 
     
-        <script src="" async defer></script>
+        <script>
+
+document.getElementById('whatsapp-link-4').addEventListener('click', function() {
+    window.location.href = 'https://wa.me/525578857813?text=Hola%2C%20me%20gustar%C3%ADa%20pedir%20un%20paquete%20de%204%20tlacoyos';
+});
+
+document.getElementById('whatsapp-link-6').addEventListener('click', function() {
+    window.location.href = 'https://wa.me/525578857813?text=Hola%2C%20me%20gustar%C3%ADa%20pedir%20un%20paquete%20de%206%20tlacoyos';
+});
+
+document.getElementById('whatsapp-link-12').addEventListener('click', function() {
+    window.location.href = 'https://wa.me/525578857813?text=Hola%2C%20me%20gustar%C3%ADa%20pedir%20un%20paquete%20de%2012%20tlacoyos';
+});
+        </script>
     </body>
 </html>
